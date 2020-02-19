@@ -29,15 +29,6 @@ spec:
     shortNames:
       - khs
 ---
-# Source: kuberhealthy/templates/namespace.yaml
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: kuberhealthy
-spec:
-  finalizers:
-  - kubernetes
----
 # Source: kuberhealthy/templates/poddisruptionbudget.yaml
 apiVersion: policy/v1beta1
 kind: PodDisruptionBudget
